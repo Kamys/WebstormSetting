@@ -1,20 +1,20 @@
 import {Component} from 'react';
 import * as React from 'react';
-import { connect, Dispatch } from 'react-redux';
+import { connect } from 'react-redux';
 
 export interface IState {
 
-  }
+}
 
-  export interface IProps {
+export interface IProps {
 
-  }
+}
 
 const mapStateToProps = (state: IReduxState) => ({
   /// nameStore: state.nameStore
 });
 
-const mapDispatchToProps = (dispatch: Dispatch<any>) => ({
+const mapDispatchToProps = (dispatch) => ({
   /*
     onLoadingMail: () => {
      dispatch(Mail.Actions.onLoadingMail.REQUEST());
