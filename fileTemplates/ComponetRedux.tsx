@@ -10,19 +10,17 @@ export interface IProps {
 
 }
 
-const mapStateToProps = (state: IReduxState) => ({
-  /// nameStore: state.nameStore
+const mapStateToProps = (state: IRootState) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  /*
-    onLoadingMail: () => {
-     dispatch(Mail.Actions.onLoadingMail.REQUEST());
-   },
-  */
+
 });
 
-class ${NAME} extends Component<IProps, IState> {
+type injectProps = ReturnType<typeof mapStateToProps>;
+type injectActions = ReturnType<typeof mapDispatchToProps>;
+
+class ${NAME} extends Component<IProps & injectProps & injectActions, IState> {
 
   state: IState = {
   };
@@ -34,4 +32,4 @@ class ${NAME} extends Component<IProps, IState> {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(${NAME})
+export default connect<injectProps, injectActions, IProps>(mapStateToProps, mapDispatchToProps)(${NAME})
