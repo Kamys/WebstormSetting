@@ -2,11 +2,11 @@ import {Component} from 'react';
 import * as React from 'react';
 import { connect } from 'react-redux';
 
-export interface IState {
+interface IState {
 
 }
 
-export interface IProps {
+interface IProps {
 
 }
 

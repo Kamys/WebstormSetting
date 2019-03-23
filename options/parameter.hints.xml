@@ -1,0 +1,9 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="ECMAScript 6">
+        <added pattern="Swipe.onLeft(callback)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>
