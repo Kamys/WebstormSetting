@@ -1,11 +1,11 @@
 import { Component } from 'react';
 import * as React from 'react';
 
-export interface IState {
+interface IState {
 
 }
 
-export interface IProps {
+interface IProps {
 
 }
 
